@@ -1,3 +1,3 @@
-# creds.ninja
-Default Credential Repository
-A collaboratio between @mez0cc and @michaelranaldo, https://creds.ninja is a default credential search engine in the style of searchsploit and ippsec.
+# Default Credential Indexer
+
+[creds.ninja]('https://creds.ninja') is a web application for searching default credentials, the easy way.
