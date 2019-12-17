@@ -39,7 +39,6 @@ def read_csv(filename):
 						vendor = row[0] 
 						username = row[1]
 						password = row[2]
-						version = row[3]
 					except:
 						print('Failed to pull data from row %s' % counter)
 						quit()
@@ -48,8 +47,7 @@ def read_csv(filename):
 					record = {
 						"vendor":vendor,
 						"username":username,
-						"password":password,
-						"version":version
+						"password":password
 					}
 
 					return_data[index_number] = record # set the data of the index number to be the record
