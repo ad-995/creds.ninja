@@ -23,6 +23,7 @@ footer{
 h1{
     scroll-behavior: smooth;
     color: white;
+    font-family: 'Nosifer', cursive;
 }
 
 input.search{
@@ -63,4 +64,17 @@ a:hover {
 a:active {
     color: white;
     text-decoration: underline;
+}
+
+table{
+	color:white;
+}
+
+table th{
+	background-color: #38414a;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: #4d5966;
+}
 }
