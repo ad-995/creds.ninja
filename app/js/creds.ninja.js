@@ -1,15 +1,12 @@
 function refresh_div() {
-	//	console.log(document.getElementById("results").childNodes);
 	const div = document.getElementById("results");
 	while (div.firstChild) {
-		console.log(div.firstChild)
 		div.removeChild(div.firstChild);
 	}
 }
 
 function create_table(json, searchterm) {
 	refresh_div()
-	console.log(searchterm)
 	if (searchterm != "") {
 		var results_count = 0;
 		var table = document.createElement("table");
@@ -32,7 +29,6 @@ function create_table(json, searchterm) {
 		for (const [key, value] of Object.entries(json)) {
 			vendor = value["vendor"]
 			if (vendor.includes(searchterm)) {
-				console.log(vendor + " matches " + searchterm)
 				var row = document.createElement("tr");
 				for (var i = 0; i < 3; i++) {
 					var cell = document.createElement("td");
@@ -43,9 +39,6 @@ function create_table(json, searchterm) {
 				tbody.appendChild(row)
 			}
 		}
-		console.log("Table body below")
-		console.log(tbody.children)
-		console.log("table body above")
 		if (tbody.children.length < 1) {
 			return "<h2>No results found :'(</h2>"
 		} else {
@@ -58,10 +51,7 @@ function create_table(json, searchterm) {
 
 function undateables(json) {
 	var target = $('#results')
-	// for all credentials
-	// if we have more than none returned
 	var search_term = document.getElementById("search").value
-
 	var results = create_table(json, search_term)
 	$("#results").append(results)
 }
