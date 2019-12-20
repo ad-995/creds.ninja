@@ -79,6 +79,7 @@ function refresh_div() {
 	while (div.firstChild) {
 		div.removeChild(div.firstChild);
 	$('#export').hide();
+	$('#info').show();
 	}
 }
 
@@ -118,11 +119,13 @@ function create_table(json, searchterm) {
 			}
 		}
 		if (tbody.children.length < 1) {
+			$('#info').hide();
 			return "<h2>No results found :'(</h2>"
 		} else {
 
 			table.appendChild(tbody)
 		    $('#export').show();
+		    $('#info').hide();
 			return table
 		}
 	}
@@ -143,4 +146,5 @@ function populate() {
 }
 
 $('#export').hide();
+$('#info').show();
 document.getElementById("search").addEventListener("input", populate);

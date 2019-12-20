@@ -7,7 +7,7 @@
     <meta name="description" content="Quickly get default credentials">
     <meta name="robots" content="NOODP,index,follow">
     <meta name="format-detection" content="telephone=no">
-    <meta property="og:title" content="Creds.ninja">
+    <meta property="og:title" content="creds.ninja">
     <meta property="og:description" content="Quickly get default credentials">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="creds.ninja">
@@ -18,8 +18,8 @@
     <meta name="twitter:title" content="creds.ninja" />
     <meta name="twitter:description" content="Quickly get default credentials" />
     <meta name="twitter:image" content="favicon.ico" />
-    <title>Creds Ninja</title>
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
+    <title>creds.ninja</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Nosifer&display=swap" rel="stylesheet">
     <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -30,9 +30,10 @@
 <body>
     <div class="container">
         <main>
-            <div class="row">
+            <div class="row center-align">
                 <div class="col s12">
-                    <h1 class="center-align">creds.ninja</h1>
+                    <h1>creds.ninja</h1>
+                    <p class="subheading"><i>Quickly get default application credentials!</i></p>
                 </div>
             </div>
             <div class="row">
@@ -40,11 +41,14 @@
                     <input id=search class="search center-align" type="" name="" placeholder="SEARCH A VENDOR" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SEARCH A VENDOR'" />
                 </div>
             </div>
+            <div class="row center-align" id="info">
+                <div class="col s6 offset-s3">
+                    <p class="info">A collaboration between <a href="https://githb.com/mez0cc">Mez0</a> and <a href="https://githb.com/michaelranaldo">Michael Ranaldo</a>.</p>
+                </div>
+            </div>
             <div class="row" id="export">
                 <div class="col s12">
-                  <!-- <a class="btn-floating green waves-effect waves-light"><i class="material-icons">publish</i></a> -->
-                  <button id="export" class="btn waves-effect waves-light green lighten-2" onclick="export_table()"><i class="material-icons">publish</i></button>
-        
+                    <button id="export" class="btn waves-effect waves-light green lighten-2" onclick="export_table()"><i class="material-icons">publish</i></button>
                 </div>
             </div>
             <div class="row">

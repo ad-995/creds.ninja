@@ -31,6 +31,19 @@ h2 {
     color: white;
 }
 
+p.info {
+    scroll-behavior: smooth;
+    color: white;
+    border-radius: 7px;
+    background-color: #38414a;
+    padding: 20px;
+}
+
+p.subheading {
+    scroll-behavior: smooth;
+    color: white;
+}
+
 button{
 	font-family: 'Open Sans', sans-serif;
 }
