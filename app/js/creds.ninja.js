@@ -27,8 +27,8 @@ function create_table(json, searchterm) {
 		table.appendChild(thead)
 
 		for (const [key, value] of Object.entries(json)) {
-			vendor = value["vendor"]
-			if (vendor.includes(searchterm)) {
+			vendor = value["vendor"].toLowerCase()
+			if (vendor.includes(searchterm.toLowerCase())) {
 				var row = document.createElement("tr");
 				for (var i = 0; i < 3; i++) {
 					var cell = document.createElement("td");
