@@ -31,6 +31,10 @@ h2 {
     color: white;
 }
 
+button{
+	font-family: 'Open Sans', sans-serif;
+}
+
 input.search{
 	width: 100%;
 	height: 80px;

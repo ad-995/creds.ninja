@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Nosifer&display=swap" rel="stylesheet">
     <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -37,6 +38,13 @@
             <div class="row">
                 <div class="col s12">
                     <input id=search class="search center-align" type="" name="" placeholder="SEARCH A VENDOR" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SEARCH A VENDOR'" />
+                </div>
+            </div>
+            <div class="row" id="export">
+                <div class="col s12">
+                  <!-- <a class="btn-floating green waves-effect waves-light"><i class="material-icons">publish</i></a> -->
+                  <button id="export" class="btn waves-effect waves-light green lighten-2" onclick="export_table()"><i class="material-icons">publish</i></button>
+        
                 </div>
             </div>
             <div class="row">
